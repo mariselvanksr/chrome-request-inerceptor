@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+  <title>Request Modifier Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Request Modification Rules</h2>
+  <form id="ruleForm">
+    <input type="text" name="match" placeholder="Match URL (partial)" required />
+    <input type="text" name="param" placeholder="Query Param" required />
+    <input type="text" name="newValue" placeholder="New Value" required />
+    <label><input type="checkbox" name="reverse" /> Reverse on response</label>
+    <button type="submit">Add Rule</button>
+  </form>
+
+  <h3>Existing Rules</h3>
+  <ul id="ruleList"></ul>
+
+  <script src="options.js"></script>
+</body>
+</html>
